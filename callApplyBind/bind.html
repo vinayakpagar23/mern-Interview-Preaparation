@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+</head>
+<body>
+    <h1>Bind method</h1>
+</body>
+</html>
+<script>
+//   bind function ko banake rakh dega but call nhi karega
+ let student1 = {
+    firstName:"Vinayak",
+    LastName:"Pagar",
+    age:24,
+  
+}
+
+let teacher1 = {
+    firstName:"Uttam",
+    LastName:"Pagar",
+    age:44,
+}
+function getDetails(){
+    return `${this.firstName}  ${this.LastName} ${this.age}`
+}
+
+
+
+
+console.log(getDetails.bind(student1));
+console.log(student1)
+console.log(student1.getDetails())
+// console.log(getDetails.bind(teacher1)());
+
+const getfunction = getDetails.bind(student1);
+// console.log(getfunction())
+</script>

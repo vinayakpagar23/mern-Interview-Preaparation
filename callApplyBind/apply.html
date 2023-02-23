@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+</head>
+<body>
+    <h1>Apply method</h1>
+</body>
+</html>
+<script>
+    // apply only take parameter as a array
+ let student1 = {
+    firstName:"Vinayak",
+    LastName:"Pagar",
+    age:24,
+  
+}
+
+let teacher1 = {
+    firstName:"Uttam",
+    LastName:"Pagar",
+    age:44,
+}
+function getDetails(){
+    return `${this.firstName}  ${this.LastName} ${this.age}`
+}
+
+function chooseSubject(sub,sub1,sub3){
+    return sub+sub1+sub3;
+}
+
+console.log(getDetails.apply(student1));
+console.log(getDetails.apply(teacher1));
+console.log(chooseSubject.apply(teacher1,["Computer-Mathematics ,","english ,","BalBharti"]))
+</script>
