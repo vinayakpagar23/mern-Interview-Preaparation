@@ -16,5 +16,14 @@ Array.prototype.sort_arr=function(){
     return this;
 }
 
-console.log(arr.sort_arr());
-console.log(arr);
+// console.log(arr.sort_arr());
+// console.log(arr);
+
+
+
+
+arr.forEach((ele,i,p)=>{
+   return p[i]=ele*2;
+})
+
+console.log(arr)

@@ -14,7 +14,7 @@ Array.prototype.myReduce=function(cb,initial){
 
 ans=arr.myReduce((acc,ele)=>{
   return acc+ele;
-},0)
+},0) 
 console.log(ans);
 
 

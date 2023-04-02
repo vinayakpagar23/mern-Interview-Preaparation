@@ -35,8 +35,18 @@
 // }
 // output=  5 5 5 5 5
 
+
+for(var i=0;i<5;i++){
+    function inner(i){
+        setTimeout(()=>{
+            console.log(i);
+        })
+    };
+    inner(i); 
+}
+
 /*---------------------------------------------------------------------------------*/
 
-"use strict"
-var a=2;
-console.log(a);
+// "use strict"
+// var a=2;
+// console.log(a);
